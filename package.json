@@ -1,13 +1,9 @@
 {
     "scripts": {
-        "bootstrap": "lerna bootstrap",
         "wipe": "find . -name node_modules -type d -exec rm -rf '{}' +",
-        "setup": "sh ./setup.sh",
+        "setup": "sh ./scripts/setup.sh",
         "nuke": "yarn wipe && yarn setup",
         "start:client": "cd workspaces/client/packages/client-app && yarn start",
         "start:server": "cd workspaces/server/packages/server-api && yarn dev"
-    },
-	"devDependencies": {
-		"lerna": "^2.11.0"
-	}
+    }
 }

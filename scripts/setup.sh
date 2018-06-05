@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 TIMESTAMP=$(date "+%Y-%m-%d_%H-%M-%S")
 
 START_TIME=$SECONDS
@@ -22,12 +22,6 @@ echo ""
 cd $DIR/workspaces/server
 yarn install
 
-
-echo ""
-echo "[setup.sh] lerna bootstrap"
-echo ""
-cd $DIR
-yarn bootstrap
 
 ELAPSED_TIME=$(($SECONDS - $START_TIME))
 echo ""
