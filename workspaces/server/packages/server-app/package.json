@@ -1,5 +1,5 @@
 {
-  "name": "server-app",
+  "name": "@server/app",
   "version": "1.0.0",
   "description": "rest api server",
   "main": "index.js",
