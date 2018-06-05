@@ -10,12 +10,6 @@ echo "───────────────── [setup.sh] $TIMESTAMP 
 echo ""
  
 
-
-echo ""
-echo "[setup.sh] lerna bootstrap"
-echo ""
-yarn bootstrap
-
 echo ""
 echo "[setup.sh] workspaces/client"
 echo ""
@@ -28,6 +22,12 @@ echo ""
 cd $DIR/workspaces/server
 yarn install
 
+
+echo ""
+echo "[setup.sh] lerna bootstrap"
+echo ""
+cd $DIR
+yarn bootstrap
 
 ELAPSED_TIME=$(($SECONDS - $START_TIME))
 echo ""
