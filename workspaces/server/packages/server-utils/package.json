@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "@server/utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^6.0.1"
+  }
+}
