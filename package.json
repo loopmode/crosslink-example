@@ -1,9 +1,20 @@
 {
+    "private": true,
+    "name": "crosslink-example",
+    "author": "jovica.aleksic@loopmode.de",
     "scripts": {
         "wipe": "find . -name node_modules -type d -exec rm -rf '{}' +",
-        "setup": "sh ./scripts/setup.sh",
         "nuke": "yarn wipe && yarn setup",
+        "setup": "sh ./scripts/setup.sh",
+        "crosslink": "crosslink -f package.json",
         "start:client": "cd workspaces/client/packages/client-app && yarn start",
         "start:server": "cd workspaces/server/packages/server-api && yarn dev"
+    },
+    "crosslink": [
+        "workspaces/common/packages/* -> workspaces/client/node_modules",
+        "workspaces/common/packages/* -> workspaces/server/node_modules"
+    ],
+    "dependencies": {
+        "@loopmode/crosslink": "^0.1.3"
     }
 }

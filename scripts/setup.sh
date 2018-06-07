@@ -22,6 +22,15 @@ echo ""
 cd $DIR/workspaces/server
 yarn install
 
+echo ""
+echo "[setup.sh] workspaces/common"
+echo ""
+cd $DIR/workspaces/common
+yarn install
+
+cd $DIR
+yarn install
+yarn crosslink
 
 ELAPSED_TIME=$(($SECONDS - $START_TIME))
 echo ""

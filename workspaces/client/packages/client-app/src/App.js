@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import {cx} from '@client/utils'
+import { cx } from '@client/utils'
+import { hello } from '@common/utils'
 
 class App extends Component {
   render() {
+    console.log('>> common/utils in client:', hello());
     return (
       <div className={cx('foo', "App")}>
         <header className="App-header">
