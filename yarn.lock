@@ -9,9 +9,9 @@
     core-js "^2.5.6"
     regenerator-runtime "^0.11.1"
 
-"@loopmode/crosslink@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@loopmode/crosslink/-/crosslink-0.1.3.tgz#301041c57fd649d113aaf37919ce7e5faecbbe2e"
+"@loopmode/crosslink@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@loopmode/crosslink/-/crosslink-0.2.2.tgz#c7edb8f9bb307c62eb389791b6d53b475d1ab60f"
   dependencies:
     "@babel/polyfill" "^7.0.0-beta.49"
     commander "^2.15.1"

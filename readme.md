@@ -1,4 +1,4 @@
-# [WIP] crosslink-example
+# crosslink-example
 
 Example of how to use `yarn` and `crosslink` to manage multiple workspaces in a full-stack project.
 
@@ -8,3 +8,7 @@ Example of how to use `yarn` and `crosslink` to manage multiple workspaces in a 
 - Each workspace contains an actual yarn workspace with a `packages/*` structure.
 - `client` packages can access all other `client` packages and all `common` packages
 - `server` packages can access all other `server` packages and all `common` packages
+
+## Installation
+
+Clone this repo. Run `yarn setup` or launch `setup.sh`.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 TIMESTAMP=$(date "+%Y-%m-%d_%H-%M-%S")
 
 START_TIME=$SECONDS
@@ -28,6 +28,10 @@ echo ""
 cd $DIR/workspaces/common
 yarn install
 
+
+echo ""
+echo "[setup.sh] crosslink"
+echo ""
 cd $DIR
 yarn install
 yarn crosslink

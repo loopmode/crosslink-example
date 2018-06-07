@@ -1,2 +1,0 @@
-common/packages/* -> client/node_modules
-common/packages/* -> server/node_modules
